@@ -28,6 +28,9 @@ class Calculator {
     return a * b;
   };
   divide = (a, b) => {
+    if (b === 0) {
+      throw DivideZeroError();
+    }
     return a / b;
   };
 }
